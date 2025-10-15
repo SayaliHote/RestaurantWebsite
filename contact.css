@@ -1,0 +1,149 @@
+/* Contact Section */
+#Contact {
+  position: relative;
+  top:140px;
+  background: url("./Images/Cafeteria15L-37.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  padding: 100px 20px; 
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Remove dark overlay */
+#Contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.3)); 
+  
+}
+
+/* Heading */
+#Contact h2 {
+  position: relative;
+  top: -50px;
+  left: 600px;
+  text-align: left;
+  font-size: 3rem;
+  /* color: #fff8e7; */
+  color: #ff8c42;
+  background-clip: text;
+  margin-bottom: 80px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  padding-left: 15px; 
+}
+
+/* Contact overlay (wrap heading + form) */
+.contact-overlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start;
+  gap: 50px; 
+}
+
+/* Form container */
+.contact-container {
+  position: relative;
+  top: -150px;
+  left: 420px;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(10px);
+  padding: 50px 35px;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 35px rgba(0,0,0,0.25);
+}
+
+/* Form fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  /* color: #ffd700; */
+  color: #ff8c42;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.35);
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(0,0,0,0.6);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border: 1px solid #ff6f61;
+  box-shadow: 0 0 8px rgba(255,111,97,0.5);
+  background: rgba(255,255,255,0.5);
+}
+
+/* Submit button */
+#submit-btn {
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #ff6f61, #e63946);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+#submit-btn:hover {
+  background: linear-gradient(135deg, #ff4d3b, #c53030);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-overlay {
+    align-items: center; /* center heading and form on mobile */
+    gap: 40px;
+  }
+
+  #Contact h2 {
+    font-size: 2.2rem;
+    text-align: center; /* center heading on mobile */
+    padding-left: 0;
+    margin-bottom: 40px;
+  }
+
+  .contact-container {
+    padding: 35px 20px;
+  }
+}

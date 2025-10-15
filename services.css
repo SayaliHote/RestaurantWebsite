@@ -1,0 +1,118 @@
+/* Services Section */
+#Services {
+  position: relative;
+  top: 140px;
+  background-image: url('./Images/hotel-1191718_1280.jpg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 60px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#Services::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(0,0,0,0.6), rgba(0,0,0,0.3)); 
+  z-index: -1;
+}
+
+#Services h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  /* color: #ffd700; golden heading */
+  color:#ff6f61;
+  margin-bottom: 50px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.services-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+/* Services list in 3x3 grid */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+}
+
+/* Service card */
+.service {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  border-left: 6px solid #ff6f61; /* bright accent */
+  padding: 25px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+
+.service:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+  border-left-color: #c24f3b;
+}
+
+.service h3 {
+  color: #c24f3b;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.service ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service ul li {
+  margin: 10px 0;
+  padding-left: 15px;
+  position: relative;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Custom bullet */
+.service ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #ff6f61;
+  font-weight: bold;
+}
+
+.service ul li strong {
+  color: #000;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .services-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  #Services h2 {
+    font-size: 2.2rem;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+
+  .service {
+    padding: 18px 15px;
+  }
+}

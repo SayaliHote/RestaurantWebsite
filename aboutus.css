@@ -1,0 +1,56 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f7f1;
+    background-image: url("./Images/coffee-shop-393954_1280.jpg");
+    background-position: fixed;
+    background-attachment: fixed;
+}
+
+.cafeteria .navbar ul li a {
+    color: #b23a48;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    background-color: transparent;
+}
+
+.cafeteria .navbar ul li a:hover {
+    background-color: #b23a48;
+    color: white;
+    border-radius: 20px;
+}
+
+
+#about-us-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fdf0e5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    position: relative;
+    top: 110px;
+}
+#About h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #b23a48;
+    margin-bottom: 30px;
+    font-family: 'Lobster', cursive;
+}
+#About h2 {
+    color: #b23a48;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#About p, #About li {
+    color: #444;
+    font-size: 1rem;
+}
+#About ul {
+    padding-left: 20px;
+}

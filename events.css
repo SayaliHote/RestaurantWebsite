@@ -1,0 +1,199 @@
+/* Background template */
+.template-img {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("./Images/Cafeteria15L-37.jpg") no-repeat center center/cover;
+    background-attachment: fixed;
+    z-index: -1; 
+}
+
+.template-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65); /* darker overlay for cozy vibe */
+}
+
+/* Upcoming Events container */
+#UpcomingEvents {
+    margin-top: 140px;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    backdrop-filter: blur(6px);
+}
+
+/* Heading */
+#UpcomingEvents h2 {
+    text-align: center;
+    color: #ff8c42; /* amber orange */
+    font-family: 'Lobster', cursive;
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+/* Event cards */
+.event {
+    background: #f5f3f0; /* soft beige-white like the tables */
+    border-left: 6px solid #d2691e; /* caramel brown */
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.3);
+}
+
+.event h3 {
+    color: #8b5e3c; /* wood tone */
+    font-size: 1.8em;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.event p {
+    font-size: 1.05em;
+    margin: 6px 0;
+    color: #333; /* dark text for readability */
+    line-height: 1.5;
+}
+
+.event p strong {
+    color: #000;
+}
+
+/* Register button */
+.register-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #ff8c42, #d2691e); /* amber to caramel */
+    color: white;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    background: linear-gradient(135deg, #e63946, #8b5e3c); /* red to wood tone */
+    transform: scale(1.05);
+    box-shadow: 0 5px 18px rgba(0,0,0,0.3);
+}
+
+/* Modal */
+#modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f5f3f0; /* beige background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  z-index: 1001;
+  width: 400px;
+  max-width: 90%;
+}
+
+/* Dark overlay */
+body.modal-open::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  z-index: 1000;
+}
+
+/* Modal heading */
+#modal h3 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: #8b5e3c; /* wood tone */
+    margin-bottom: 20px;
+}
+
+/* Modal form */
+#modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+#modal input {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* Modal submit button */
+#modal button[type="submit"] {
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #d2691e, #8b5e3c); /* caramel to wood */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#modal button[type="submit"]:hover {
+    background: linear-gradient(135deg, #ff8c42, #e63946); /* amber to red */
+}
+
+/* Close cross icon */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 32px;
+    color: #555;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close-icon:hover {
+    color: #e63946;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #UpcomingEvents {
+        padding: 20px;
+    }
+
+    .event {
+        padding: 18px;
+    }
+
+    .event h3 {
+        font-size: 1.5em;
+    }
+
+    .event p {
+        font-size: 0.95em;
+    }
+}

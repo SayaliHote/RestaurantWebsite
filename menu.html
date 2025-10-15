@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./menu.css">
+    <title>Homepage - The Floating Fork</title>
+</head>
+<body>
+        <header>
+            <section class="cafeteria">
+                <div class="first">
+                    <h1>The<span style="color: #b23a48;; font-weight: 400;"> Floating </span> Fork</h1>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./aboutus.html">About us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
+                        <li><a href="./events.html">Events</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+
+        <section class="template-img"></section>
+
+        <h2 id="heading">Menu</h2>
+        <main id = "menu-container">
+            <div class="menu-wrapper">
+                <!-- Italian Cuisine -->
+                <div id="menu">
+                    <div>
+                        <h2>Italian Delights</h2>
+                        <ul type="none">
+                            <li>
+                                <h3>Margherita Pizza</h3>
+                                <p class="description">Classic pizza with fresh tomatoes, basil, and mozzarella.</p>
+                                <p class="price">₹399</p>
+                                <button class="add-to-cart" data-name="Margherita Pizza" data-price="399">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Veggie Supreme Pizza</h3>
+                                <p class="description">A delicious pizza topped with a variety of fresh vegetables and cheese.</p>
+                                <p class="price">₹499</p>
+                                <button class="add-to-cart" data-name="Veggie Supreme Pizza" data-price="499">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Alfredo Pasta</h3>
+                                <p class="description">Creamy Alfredo pasta with a rich, velvety sauce.</p>
+                                <p class="price">₹399</p>
+                                <button class="add-to-cart" data-name="Alfredo Pasta" data-price="399">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Arrabbiata Pasta</h3>
+                                <p class="description">Spicy pasta in a tangy tomato-based sauce.</p>
+                                <p class="price">₹349</p>
+                                <button class="add-to-cart" data-name="Arrabbiata Pasta" data-price="349">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Garlic Bread with Cheese</h3>
+                                <p class="description">Crispy garlic bread topped with melted cheese.</p>
+                                <p class="price">₹199</p>
+                                <button class="add-to-cart" data-name="Garlic Bread with Cheese" data-price="199">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Bruschetta</h3>
+                                <p class="description">Toasted bread topped with diced tomatoes, basil, and olive oil.</p>
+                                <p class="price">₹249</p>
+                                <button class="add-to-cart" data-name="Bruschetta" data-price="249">Add to Cart</button>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <!-- Chinese Cuisine -->
+                    <div>
+                        <h2>Chinese Favorites</h2>
+                        <ul type = "none">
+                            <li>
+                                <h3>Vegetable Manchurian</h3>
+                                <p class="description">Vegetable Manchurian served with your choice of sides.</p>
+                                <p class="price">₹90</p>
+                                <button class="add-to-cart" data-name="Vegetable Manchurian" data-price="90">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Chilli Paneer (Dry/Gravy)</h3>
+                                <p class="description">Spicy and tangy stir-fried paneer with bell peppers and sauces.</p>
+                                <p class="price">₹349</p>
+                                <button class="add-to-cart" data-name="Chilli Paneer (Dry/Gravy)" data-price="349">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Schezwan Fried Rice</h3>
+                                <p class="description">Fried rice with spicy Schezwan sauce and mixed vegetables.</p>
+                                <p class="price">₹249</p>
+                                <button class="add-to-cart" data-name="Schezwan Fried Rice" data-price="249">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Veg Hakka Noodles</h3>
+                                <p class="description">Stir-fried noodles with vegetables and a flavorful soy-based sauce.</p>
+                                <p class="price">₹299</p>
+                                <button class="add-to-cart" data-name="Veg Hakka Noodles" data-price="299">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Spring Rolls</h3>
+                                <p class="description">Crispy rolls filled with vegetables, served with dipping sauce.</p>
+                                <p class="price">₹159</p>
+                                <button class="add-to-cart" data-name="Spring Rolls" data-price="159">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Hot and Sour Soup</h3>
+                                <p class="description">A tangy and spicy soup with mixed vegetables and tofu.</p>
+                                <p class="price">₹129</p>
+                                <button class="add-to-cart" data-name="Hot and Sour Soup" data-price="129">Add to Cart</button>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <!-- Indian Cuisine -->
+                    <div>
+                        <h2>Indian Flavors</h2>
+                        <ul type="none">
+                            <li>
+                                <h3>Paneer Butter Masala</h3>
+                                <p class="description">Soft paneer cooked in a rich and creamy tomato-based gravy.</p>
+                                <p class="price">₹349</p>
+                                <button class="add-to-cart" data-name="Paneer Butter Masala" data-price="349">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Dal Makhani</h3>
+                                <p class="description">Slow-cooked black lentils and kidney beans in a creamy gravy.</p>
+                                <p class="price">₹199</p>
+                                <button class="add-to-cart" data-name="Dal Makhani" data-price="199">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Veg Biryani</h3>
+                                <p class="description">A fragrant rice dish with mixed vegetables and aromatic spices.</p>
+                                <p class="price">₹249</p>
+                                <button class="add-to-cart" data-name="Veg Biryani" data-price="249">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Chole Bhature</h3>
+                                <p class="description">Chickpea curry served with fluffy deep-fried bread (bhature).</p>
+                                <p class="price">₹179</p>
+                                <button class="add-to-cart" data-name="Chole Bhature" data-price="179">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Malai Kofta</h3>
+                                <p class="description">Deep-fried cottage cheese balls in a rich and creamy gravy.</p>
+                                <p class="price">₹299</p>
+                                <button class="add-to-cart" data-name="Malai Kofta" data-price="299">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Stuffed Naan with Curd</h3>
+                                <p class="description">Soft naan stuffed with filling, served with fresh curd.</p>
+                                <p class="price">₹129</p>
+                                <button class="add-to-cart" data-name="Stuffed Naan with Curd" data-price="129">Add to Cart</button>
+                            </li>
+                            
+                            <!-- <li>
+                                <h3>Rajma Rice</h3>
+                                <p class="description">Red kidney beans curry served with steamed rice.</p>
+                                <p class="price">₹179</p>
+                                <button class="add-to-cart" data-name="Rajma Rice" data-price="179">Add to Cart</button>
+                            </li> -->
+                            
+                        </ul>
+                    </div>
+                
+                    <!-- Fast Food -->
+                    <div>
+                        <h2>Fast Food</h2>
+                        <ul type="none">
+                            <li>
+                                <h3>Burger</h3>
+                                <p class="description">Classic vegetarian burger with a delicious patty and fresh toppings.</p>
+                                <p class="price">₹99</p>
+                                <button class="add-to-cart" data-name="Burger" data-price="99">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Sandwich</h3>
+                                <p class="description">Grilled sandwich with a mix of veggies and cheese.</p>
+                                <p class="price">₹129</p>
+                                <button class="add-to-cart" data-name="Sandwich" data-price="129">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>French Fries</h3>
+                                <p class="description">Crispy golden fries, perfect as a side or snack.</p>
+                                <p class="price">₹79</p>
+                                <button class="add-to-cart" data-name="French Fries" data-price="79">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Cheese Balls</h3>
+                                <p class="description">Crispy balls filled with melted cheese, served hot.</p>
+                                <p class="price">₹149</p>
+                                <button class="add-to-cart" data-name="Cheese Balls" data-price="149">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Veg Nuggets</h3>
+                                <p class="description">Crunchy and golden veggie nuggets, perfect for snacking.</p>
+                                <p class="price">₹119</p>
+                                <button class="add-to-cart" data-name="Veg Nuggets" data-price="119">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Pizza Rolls</h3>
+                                <p class="description">Savory pizza-filled rolls, served with a side of sauce.</p>
+                                <p class="price">₹159</p>
+                                <button class="add-to-cart" data-name="Pizza Rolls" data-price="159">Add to Cart</button>
+                            </li>
+                            
+                            <!-- <li>
+                                <h3>Onion Rings</h3>
+                                <p class="description">Crispy, crunchy onion rings served with dipping sauce.</p>
+                                <p class="price">₹89</p>
+                                <button class="add-to-cart" data-name="Onion Rings" data-price="89">Add to Cart</button>
+                            </li> -->
+                            
+                        </ul>
+                    </div>
+                
+                    <!-- Juices -->
+                    <div>
+                        <h2>Fresh Juices</h2>
+                        <ul type="none">
+                            <li>
+                                <h3>Orange Juice</h3>
+                                <p class="description">Freshly squeezed orange juice, full of Vitamin C.</p>
+                                <p class="price">₹79</p>
+                                <button class="add-to-cart" data-name="Orange Juice" data-price="79">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Watermelon Juice</h3>
+                                <p class="description">Refreshing watermelon juice, perfect for a hot day.</p>
+                                <p class="price">₹89</p>
+                                <button class="add-to-cart" data-name="Watermelon Juice" data-price="89">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Mango Juice</h3>
+                                <p class="description">Sweet mango juice, a tropical delight.</p>
+                                <p class="price">₹99</p>
+                                <button class="add-to-cart" data-name="Mango Juice" data-price="99">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Pineapple Juice</h3>
+                                <p class="description">Tangy and sweet pineapple juice, full of flavor.</p>
+                                <p class="price">₹89</p>
+                                <button class="add-to-cart" data-name="Pineapple Juice" data-price="89">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Mixed Fruit Juice</h3>
+                                <p class="description">A blend of fresh fruits to create a refreshing juice.</p>
+                                <p class="price">₹109</p>
+                                <button class="add-to-cart" data-name="Mixed Fruit Juice" data-price="109">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Sweet Lime Juice</h3>
+                                <p class="description">A tangy and sweet lime juice, refreshing and healthy.</p>
+                                <p class="price">₹79</p>
+                                <button class="add-to-cart" data-name="Sweet Lime Juice" data-price="79">Add to Cart</button>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <!-- Shakes -->
+                    <div>
+                        <h2>Milkshakes</h2>
+                        <ul type="none">
+                            <li>
+                                <h3>Chocolate Shake</h3>
+                                <p class="description">A creamy chocolate shake, rich and indulgent.</p>
+                                <p class="price">₹159</p>
+                                <button class="add-to-cart" data-name="Chocolate Shake" data-price="159">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Strawberry Shake</h3>
+                                <p class="description">A sweet and fruity strawberry shake, a treat for your tastebuds.</p>
+                                <p class="price">₹159</p>
+                                <button class="add-to-cart" data-name="Strawberry Shake" data-price="159">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Vanilla Shake</h3>
+                                <p class="description">A classic vanilla shake, smooth and creamy.</p>
+                                <p class="price">₹149</p>
+                                <button class="add-to-cart" data-name="Vanilla Shake" data-price="149">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Banana Shake</h3>
+                                <p class="description">A healthy banana shake, naturally sweetened.</p>
+                                <p class="price">₹149</p>
+                                <button class="add-to-cart" data-name="Banana Shake" data-price="149">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Oreo Shake</h3>
+                                <p class="description">A delicious shake with crushed Oreo cookies.</p>
+                                <p class="price">₹169</p>
+                                <button class="add-to-cart" data-name="Oreo Shake" data-price="169">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Cold Coffee</h3>
+                                <p class="description">A refreshing iced coffee, perfect for a caffeine fix.</p>
+                                <p class="price">₹139</p>
+                                <button class="add-to-cart" data-name="Cold Coffee" data-price="139">Add to Cart</button>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                
+                    <!-- Sweets -->
+                    <div>
+                        <h2>Sweets</h2>
+                        <ul type="none">
+                            <li>
+                                <h3>Gulab Jamun</h3>
+                                <p class="description">Soft, syrup-soaked dough balls served warm for the perfect dessert.</p>
+                                <p class="price">₹89</p>
+                                <button class="add-to-cart" data-name="Gulab Jamun" data-price="89">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Rasgulla</h3>
+                                <p class="description">Soft and spongy cheese balls soaked in sweet syrup.</p>
+                                <p class="price">₹99</p>
+                                <button class="add-to-cart" data-name="Rasgulla" data-price="99">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Moong Dal Halwa</h3>
+                                <p class="description">A rich and flavorful sweet dish made with yellow moong dal.</p>
+                                <p class="price">₹159</p>
+                                <button class="add-to-cart" data-name="Moong Dal Halwa" data-price="159">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Gajar Ka Halwa</h3>
+                                <p class="description">A warm, sweet dessert made with grated carrots and milk.</p>
+                                <p class="price">₹149</p>
+                                <button class="add-to-cart" data-name="Gajar Ka Halwa" data-price="149">Add to Cart</button>
+                            </li>
+                            
+                            <li>
+                                <h3>Jalebi with Rabri</h3>
+                                <p class="description">Crispy, fried jalebi served with creamy and rich rabri.</p>
+                                <p class="price">₹179</p>
+                                <button class="add-to-cart" data-name="Jalebi with Rabri" data-price="179">Add to Cart</button>
+                            </li>
+                            
+                            <!-- <li>
+                                <h3>Kesar Pista Kulfi</h3>
+                                <p class="description">A frozen, rich Indian ice cream flavored with saffron and pistachios.</p>
+                                <p class="price">₹129</p>
+                                <button class="add-to-cart" data-name="Kesar Pista Kulfi" data-price="129">Add to Cart</button>
+                            </li> -->
+                            
+                            <li>
+                                <h3>Malpua</h3>
+                                <p class="description">Fried pancakes drenched in sugar syrup, a classic Indian sweet.</p>
+                                <p class="price">₹99</p>
+                                <button class="add-to-cart" data-name="Malpua" data-price="99">Add to Cart</button>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+                <!-- Cart Section -->
+                <aside id="cart">
+                    <h2>Your Cart</h2>
+                    <ul id="cart-items"></ul>
+                    <p id="cart-total">Total: ₹0.00</p>
+                    <button id="place-order">Place Order</button>
+                </aside>
+        </main>      
+        
+    <script src="./script.js"></script>
+</body>
+</html>
